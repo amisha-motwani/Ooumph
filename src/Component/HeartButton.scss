@@ -1,0 +1,63 @@
+.heart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  // padding: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+// Heart Style
+.heart {
+  font-size: 1.3rem;
+  user-select: none;
+  transition: all 0.3s ease-in-out;
+}
+
+// Expanding burst animation on like
+.burst {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, rgba(255, 77, 109, 0.5), transparent);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+// Sparkles animation
+.sparkle {
+  position: absolute;
+  background: radial-gradient(circle, #ff4d6d 20%, rgba(255, 77, 109, 0) 80%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.sparkle-1 {
+  left: -9px;
+  animation: fadeOut 0.8s forwards;
+}
+
+.sparkle-2 {
+  right: 50px;
+  animation: fadeOut 0.8s forwards;
+}
+
+.sparkle-3 {
+  top: -8px;
+  left: 8px;
+  animation: fadeOut 0.8s forwards;
+}
+
+// Fade out effect for sparkles
+@keyframes fadeOut {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
