@@ -55,7 +55,7 @@ function CommentModal({ closeModal, postDetails }) {
         overlayClassName="fixed inset-0 bg-opacity-10 backdrop-blur-[5px]"
         
       >
-        <div className="bg-white rounded-lg sm:w-[60%] w-[90%] lg:max-w-[75%] md:w-[75%] transform transition-all md:mt-0 my-5 overflow-y-scroll"
+        <div className="bg-white rounded-lg sm:w-[60%] w-[90%] lg:max-w-[85%] md:w-[75%] transform transition-all md:mt-0 my-5 overflow-y-scroll"
         >
           <div className=" md:hidden md:px-0 px-2 flex justify-between items-center md:mt-3 mt-1">
             <div className="w-full flex justify-start items-center gap-2">
